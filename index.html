@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +24,17 @@
     google.charts.setOnLoadCallback(drawChartSales);
   </script>
   <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
+  <title>HomeChoice NSW</title>
 </head>
 
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#"><span style="color: #eee;"><img src="images/finallogo.png" style="height:30px;width:30px;">HomeChoiceNSW</span></a>
+        <div style="color:#eee; margin-top:10px;">
+          <img src="images/finallogo.png" style="height:30px;width:30px;" alt="HomeChoiceNSW"> 
+          <b>HomeChoice NSW</b>
+        </div>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#rent-id" style="color:#eee;"><i class="fa fa-dollar"style="font-size:15px;color:#eee;"></i></span> Rent</a></li>
@@ -40,50 +42,48 @@
       </ul>
     </div>
   </nav>
-  <div id="content" role="main">
-    <div class="container" style="background-color:#eee; margin-bottom:20px;">
-      <h2>About</h2>
-    </div>
-    <div class="container">
-      <p>HomeChoice NSW website visualizes sales and rents pay data based on NSW suburbs renting and house price trends data
-        released by <a href="http://www.housing.nsw.gov.au/about-us/reports-plans-and-papers/rent-and-sales-reports/issue-119">NSW Housing</a>.</p>
-      <ul>
-        <li>All statistics were sourced from Rent and Sales Report - Issue 119. </li>
-        <li>This will facilitate Sydney-siders to quickly view the renting and selling data within different suburb and time
-          period
-        </li>
-        <li>All data was aggregated on state and occupation group level.</li>
-        <li>Our aim is to make the data more friendly and interesting with the beautiful experience.</li>
-      </ul>
-      <div style="margin-top: 15px; margin-bottom:20px;">
-        <a href="#" class="btn btn-info btn-lg">
+  <div class="container">
+    <div id="content" role="main">
+      <div>
+        <p>HomeChoice NSW website visualizes sales and rents pay data based on NSW suburbs renting and house price trends data
+          released by <a href="http://www.housing.nsw.gov.au/about-us/reports-plans-and-papers/rent-and-sales-reports/issue-119">NSW Housing</a>.</p>
+        <ul>
+          <li>All statistics were sourced from Rent and Sales Report - Issue 119. </li>
+          <li>This will facilitate Sydney-siders to quickly view the renting and selling data within different suburb and time
+            period
+          </li>
+          <li>All data was aggregated on state and occupation group level.</li>
+          <li>Our aim is to make the data more friendly and interesting with the beautiful experience.</li>
+        </ul>
+        <div style="margin-top: 15px; margin-bottom:20px;">
+          <a href="#" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-star"></span> Flash Player is needed for viewing Graphs
-      </a>
+          </a>
+        </div>
+        <div id="rent-id" class="container" style="background-color:#eee;">
+          <h2>Rent Trend in NSW</h2>
+        </div>
+        <div id="chart_div" style="width: 900px; height: 500px; margin-top: 20px;"></div>
+        <hr>
+        <div id="sales-id" class="container" style="background-color:#eee;">
+          <h2>Sales Trend in NSW</h2>
+        </div>
+        <div id="sales_div" style="width: 900px; height: 500px; margin-top: 30px;"></div>
       </div>
-      <div class="container" id="rent-id" style="background-color:#eee;">
-        <h2>Rent Trend in NSW</h2>
-      </div>
-      <div id="chart_div" style="width: 900px; height: 500px; margin-top: 20px;"></div>
-      <hr>
-      <div id="sales-id" class="container" style="background-color:#eee;">
-        <h1 id="sales-trend">Sales Trend in NSW</h1>
-      </div>
-      <div id="sales_div" style="width: 900px; height: 500px; margin-top: 30px;"></div>
     </div>
-  </div>
 
-  <div class="container" style="background-color:black;width:100%;height:50px;margin-top:100px;">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="col-md-8" style="color:#eee;margin-top:14px;">
-          Data source:<a rel="nofollow" href="http://www.housing.nsw.gov.au/about-us/reports-plans-and-papers/rent-and-sales-reports/issue-119"> Family and Community Services NSW</a>
-        </div>
-        <div class="col-md-4">
-          <p class="muted pull-right" style="color:#eee;margin-top:14px;"><b>Created for <font color="#23527c">GovHack 2017!</font></b></p>
+    <div style="background-color:black;width:100%;height:50px;margin-top:100px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="col-md-8" style="color:#eee;margin-top:14px;">
+            Data source:<a rel="nofollow" href="http://www.housing.nsw.gov.au/about-us/reports-plans-and-papers/rent-and-sales-reports/issue-119"> Family and Community Services NSW</a>
+          </div>
+          <div class="col-md-4">
+            <p class="muted pull-right" style="color:#eee;margin-top:14px;"><b>Created for <font color="#23527c">GovHack 2017!</font></b></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 </body>
 
