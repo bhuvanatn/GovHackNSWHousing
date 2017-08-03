@@ -1,4 +1,6 @@
-# GovHackNSWHousing
+# Project for GovHack Hackthon 2017
+
+We team of 2 participated in GovHack hackthon 2017
 
 This application is built using HTML, CSS, Javascript.
 
