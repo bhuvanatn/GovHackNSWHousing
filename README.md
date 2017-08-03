@@ -14,3 +14,6 @@ Here we are using data from government NSW Housing department which is readly av
 Clik on link to view application:
 
 <a href="https://bhuvanatn.github.io/GovHackNSWHousing/">HomeChoice NSW </a>
+
+Also check the video recording:
+<a href= "https://www.youtube.com/watch?v=LgQOsRKUfEg&index=1&list=FL8_OuBUrnzpsmaUxkzSTXSA"> GovHack2017 Video Recording</a>
